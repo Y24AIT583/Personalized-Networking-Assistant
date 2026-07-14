@@ -493,9 +493,12 @@ with right:
 # Generate Suggestions
 # ==============================
 
-if st.button(
-    "🚀 Generate Conversation Starters"
-):
+generate = st.button(
+    "🚀 Generate AI Networking Suggestions",
+    use_container_width=True
+)
+
+if generate:
 
 
     if not event_description:
