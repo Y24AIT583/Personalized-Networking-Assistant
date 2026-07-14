@@ -269,6 +269,56 @@ box-shadow:0 10px 20px rgba(37,99,235,.4);
 
 }
 
+.suggestion-card{
+
+background:white;
+
+padding:22px;
+
+border-radius:18px;
+
+margin-bottom:18px;
+
+border-left:6px solid #2563eb;
+
+box-shadow:0 6px 18px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+.suggestion-card:hover{
+
+transform:translateY(-4px);
+
+box-shadow:0 12px 28px rgba(37,99,235,.18);
+
+}
+
+.suggestion-title{
+
+font-size:18px;
+
+font-weight:700;
+
+color:#2563eb;
+
+margin-bottom:12px;
+
+}
+
+.suggestion-text{
+
+font-size:16px;
+
+line-height:1.7;
+
+color:#374151;
+
+}
+
+
+
 </style>
 """,
 unsafe_allow_html=True
