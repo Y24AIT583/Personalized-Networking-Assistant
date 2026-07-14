@@ -150,6 +150,8 @@ font-size:18px;
 
 background:#ffffff;
 
+color:#111827;
+
 padding:15px;
 
 border-radius:10px;
@@ -157,6 +159,8 @@ border-radius:10px;
 margin-bottom:10px;
 
 border-left:5px solid #2563eb;
+
+font-size:17px;
 
 }
 
