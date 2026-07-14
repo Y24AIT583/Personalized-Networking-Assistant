@@ -2,9 +2,7 @@ from fastapi import APIRouter
 
 from app.models.schemas import (
     RecommendationRequest,
-    RecommendationResponse,
-    ConversationRequest,
-    ConversationResponse
+    ConversationRequest
 )
 
 from app.services.recommendation_engine import (
@@ -18,12 +16,8 @@ from app.services.conversation_generator import (
 router = APIRouter()
 
 
-@router.post(
-    "/recommend",
-    response_model=RecommendationResponse
-)
-def recommend_connections(
-        request: RecommendationRequest):
+@router.post("/recommend")
+def recommend_connections(request: RecommendationRequest):
 
     recommendations = generate_recommendations(
         request.interests,
@@ -40,12 +34,8 @@ def recommend_connections(
     }
 
 
-@router.post(
-    "/conversation-starters",
-    response_model=ConversationResponse
-)
-def conversation_starters(
-        request: ConversationRequest):
+@router.post("/conversation-starters")
+def conversation_starters(request: ConversationRequest):
 
     suggestions = generate_conversation_starters(
         request.profession,
@@ -54,4 +44,42 @@ def conversation_starters(
 
     return {
         "conversation_starters": suggestions
+    }
+
+
+# =====================================================
+# NEW ENDPOINT FOR STREAMLIT FRONTEND
+# =====================================================
+
+@router.post("/generate")
+def generate(request: dict):
+
+    profession = request.get("profession", "")
+
+    skills = request.get("skills", [])
+
+    interests = request.get("interests", [])
+
+    description = request.get("description", "")
+
+    # Generate recommended networking topics
+    topics = generate_recommendations(
+        interests,
+        skills,
+        profession
+    )
+
+    # Generate conversation starters
+    suggestions = generate_conversation_starters(
+        profession,
+        interests
+    )
+
+    # Include event description as a topic if provided
+    if description:
+        topics.insert(0, description)
+
+    return {
+        "topics": topics,
+        "suggestions": suggestions
     }
