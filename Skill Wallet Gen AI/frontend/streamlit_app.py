@@ -688,7 +688,8 @@ if generate:
 
 if st.session_state.topics:
 
-
+    st.markdown('<div class="glass-card">', unsafe_allow_html=True)
+    
     st.header(
         "📌 Detected Topics"
     )
@@ -706,7 +707,7 @@ if st.session_state.topics:
 
     st.markdown(topic_html, unsafe_allow_html=True)
 
-
+    st.markdown("</div>", unsafe_allow_html=True)
 
 # ==============================
 # Suggestions + Feedback
