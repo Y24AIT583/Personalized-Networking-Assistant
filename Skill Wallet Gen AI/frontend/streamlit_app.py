@@ -129,9 +129,9 @@ st.markdown(
 
 .topic-card{
 
-background:#dbeafe;
+background:#1f2937;
 
-color:#111827;
+color:white;
 
 padding:15px;
 
@@ -141,16 +141,16 @@ margin-bottom:10px;
 
 font-weight:bold;
 
-font-size:18px;
+border-left:5px solid #3b82f6;
 
 }
 
 
 .suggestion-card{
 
-background:#ffffff;
+background:#1f2937;
 
-color:#111827;
+color:white;
 
 padding:15px;
 
@@ -158,9 +158,7 @@ border-radius:10px;
 
 margin-bottom:10px;
 
-border-left:5px solid #2563eb;
-
-font-size:17px;
+border-left:5px solid #3b82f6;
 
 }
 
