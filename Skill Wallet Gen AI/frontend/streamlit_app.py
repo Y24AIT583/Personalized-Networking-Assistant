@@ -177,6 +177,38 @@ font-size:17px;
 
 }
 
+
+.hero-container{
+    background: linear-gradient(135deg,#2563eb,#7c3aed);
+    padding:40px;
+    border-radius:20px;
+    color:white;
+    margin-bottom:30px;
+    box-shadow:0 8px 24px rgba(0,0,0,0.2);
+}
+
+.hero-title{
+    font-size:42px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.hero-subtitle{
+    font-size:18px;
+    opacity:0.95;
+    margin-bottom:20px;
+}
+
+.hero-badge{
+    display:inline-block;
+    background:rgba(255,255,255,0.2);
+    padding:8px 18px;
+    border-radius:999px;
+    font-size:14px;
+    font-weight:600;
+}
+
+
 </style>
 """,
 unsafe_allow_html=True
@@ -184,18 +216,23 @@ unsafe_allow_html=True
 
 
 
-# ==============================
-# Header
-# ==============================
+st.markdown("""
+<div class="hero-container">
 
-st.title(
-"🤝 Personalized Networking Assistant"
-)
+<div class="hero-title">
+🤝 Personalized Networking Assistant
+</div>
 
+<div class="hero-subtitle">
+Build meaningful professional connections with AI-powered recommendations, conversation starters, and networking insights.
+</div>
 
-st.write(
-"Generate AI-powered professional networking conversation starters."
-)
+<div class="hero-badge">
+🚀 Powered by Google Gemini AI
+</div>
+
+</div>
+""", unsafe_allow_html=True)
 
 
 
