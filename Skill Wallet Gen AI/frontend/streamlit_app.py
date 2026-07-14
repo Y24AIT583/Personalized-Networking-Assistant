@@ -558,20 +558,17 @@ if st.session_state.topics:
     )
 
 
+    topic_html = ""
+
     for topic in st.session_state.topics:
 
+        topic_html += f"""
+        <span class="topic-chip">
+            ✨ {topic}
+        </span>
+        """
 
-        st.markdown(
-
-            f"""
-            <div class="topic-card">
-            📍 {topic}
-            </div>
-            """,
-
-            unsafe_allow_html=True
-
-        )
+    st.markdown(topic_html, unsafe_allow_html=True)
 
 
 
