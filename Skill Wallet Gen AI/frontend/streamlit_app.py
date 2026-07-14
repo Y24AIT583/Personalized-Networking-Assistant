@@ -616,8 +616,6 @@ if st.session_state.topics:
 # ==============================
 
 if st.session_state.suggestions:
-
-    st.markdown('<div class="glass-card">', unsafe_allow_html=True)
     
     st.header(
         "💬 Conversation Starters"
@@ -708,9 +706,7 @@ if st.session_state.suggestions:
                 st.warning(
                     "Feedback saved"
                 )
-
-    st.markdown("</div>", unsafe_allow_html=True)
-
+                
     # PDF Download
 
     st.subheader(
