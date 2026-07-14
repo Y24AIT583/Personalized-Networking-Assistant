@@ -235,6 +235,39 @@ font-size:17px;
     margin-top:8px;
 }
 
+.topic-chip{
+
+display:inline-block;
+
+background:linear-gradient(135deg,#3b82f6,#2563eb);
+
+color:white;
+
+padding:10px 18px;
+
+margin:8px;
+
+border-radius:999px;
+
+font-weight:600;
+
+font-size:15px;
+
+box-shadow:0 5px 15px rgba(37,99,235,.25);
+
+transition:all .3s ease;
+
+cursor:pointer;
+
+}
+
+.topic-chip:hover{
+
+transform:translateY(-3px) scale(1.05);
+
+box-shadow:0 10px 20px rgba(37,99,235,.4);
+
+}
 
 </style>
 """,
