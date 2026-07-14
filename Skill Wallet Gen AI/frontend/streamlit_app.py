@@ -451,55 +451,42 @@ if st.sidebar.button("View History"):
 
 
 
-# ==============================
-# User Profile
-# ==============================
+left,right = st.columns([1,1.3])
 
-st.header(
-"👤 User Profile"
-)
+with left:
 
+    st.markdown("## 👤 User Profile")
 
-profession = st.selectbox(
-    "Profession",
-    [
-        "Student",
-        "Developer",
-        "Researcher",
-        "Entrepreneur"
-    ]
-)
+    profession = st.selectbox(
+        "Profession",
+        [
+            "Student",
+            "Developer",
+            "Researcher",
+            "Entrepreneur"
+        ]
+    )
 
+    skills = st.text_input(
+        "Skills",
+        placeholder="Python, Flask, AI..."
+    )
 
-skills = st.text_input(
-    "Your Skills",
-    placeholder="Python, Flask, AI"
-)
-
-
-interests = st.text_input(
-    "Your Interests",
-    placeholder="Machine Learning, Cloud"
-)
+    interests = st.text_input(
+        "Interests",
+        placeholder="Machine Learning, Cloud..."
+    )
 
 
+with right:
 
-# ==============================
-# Event Details
-# ==============================
+    st.markdown("## 📝 Event Details")
 
-st.header(
-"📝 Event Details"
-)
-
-
-event_description = st.text_area(
-    "Describe the event",
-    placeholder=
-    "Example: AI conference discussing Generative AI and Cloud Computing",
-    height=150
-)
-
+    event_description = st.text_area(
+        "Describe the Event",
+        placeholder="Example: AI conference discussing Generative AI and Cloud Computing...",
+        height=220
+    )
 
 
 # ==============================
