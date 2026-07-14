@@ -169,9 +169,13 @@ font-size:17px;
 
 background:#fef9c3;
 
+color:#111827;
+
 padding:15px;
 
 border-radius:10px;
+
+font-size:17px;
 
 }
 
