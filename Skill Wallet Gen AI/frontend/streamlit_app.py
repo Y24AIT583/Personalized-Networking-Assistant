@@ -208,6 +208,33 @@ font-size:17px;
     font-weight:600;
 }
 
+.metric-card{
+    background: white;
+    padding:20px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    transition:0.3s;
+    border:1px solid #e5e7eb;
+}
+
+.metric-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 24px rgba(37,99,235,0.18);
+}
+
+.metric-number{
+    font-size:34px;
+    font-weight:700;
+    color:#2563eb;
+}
+
+.metric-title{
+    color:#6b7280;
+    font-size:15px;
+    margin-top:8px;
+}
+
 
 </style>
 """,
