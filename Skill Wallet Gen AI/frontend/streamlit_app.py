@@ -131,6 +131,8 @@ st.markdown(
 
 background:#dbeafe;
 
+color:#111827;
+
 padding:15px;
 
 border-radius:10px;
@@ -138,6 +140,8 @@ border-radius:10px;
 margin-bottom:10px;
 
 font-weight:bold;
+
+font-size:18px;
 
 }
 
