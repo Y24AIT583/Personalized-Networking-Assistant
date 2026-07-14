@@ -261,7 +261,41 @@ Build meaningful professional connections with AI-powered recommendations, conve
 </div>
 """, unsafe_allow_html=True)
 
+st.markdown("## 📊 Dashboard")
 
+col1, col2, col3, col4 = st.columns(4)
+
+with col1:
+    st.markdown(f"""
+    <div class="metric-card">
+        <div class="metric-number">{len(st.session_state.topics)}</div>
+        <div class="metric-title">Detected Topics</div>
+    </div>
+    """, unsafe_allow_html=True)
+
+with col2:
+    st.markdown(f"""
+    <div class="metric-card">
+        <div class="metric-number">{len(st.session_state.suggestions)}</div>
+        <div class="metric-title">AI Suggestions</div>
+    </div>
+    """, unsafe_allow_html=True)
+
+with col3:
+    st.markdown("""
+    <div class="metric-card">
+        <div class="metric-number">🤖</div>
+        <div class="metric-title">Gemini AI</div>
+    </div>
+    """, unsafe_allow_html=True)
+
+with col4:
+    st.markdown("""
+    <div class="metric-card">
+        <div class="metric-number">🟢</div>
+        <div class="metric-title">System Ready</div>
+    </div>
+    """, unsafe_allow_html=True)
 
 # ==============================
 # Sidebar
