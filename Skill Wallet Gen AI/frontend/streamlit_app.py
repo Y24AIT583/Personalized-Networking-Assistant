@@ -640,17 +640,25 @@ if st.session_state.suggestions:
 
 
         st.markdown(
-
             f"""
-            <div class="suggestion-card">
-            {suggestion}
-            </div>
-            """,
+        <div class="suggestion-card">
 
-            unsafe_allow_html=True
+        <div class="suggestion-title">
+        💬 Conversation Starter #{index+1}
+        </div>
 
+        <div class="suggestion-text">
+        {suggestion}
+        </div>
+
+        </div>
+        """,
+        unsafe_allow_html=True
         )
 
+        st.code(suggestion)
+
+        st.caption("📋 Copy the text above and use it while networking.")
 
         col1,col2 = st.columns(2)
 
