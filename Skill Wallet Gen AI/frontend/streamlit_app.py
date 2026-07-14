@@ -453,9 +453,7 @@ if st.sidebar.button("View History"):
 left,right = st.columns([1,1.3])
 
 with left:
-
-    st.markdown('<div class="glass-card">', unsafe_allow_html=True)
-    
+   
     st.markdown("## 👤 User Profile")
 
     profession = st.selectbox(
@@ -477,13 +475,9 @@ with left:
         "Interests",
         placeholder="Machine Learning, Cloud..."
     )
-
-    st.markdown("</div>", unsafe_allow_html=True)
     
 with right:
-
-    st.markdown('<div class="glass-card">', unsafe_allow_html=True)
-    
+   
     st.markdown("## 📝 Event Details")
 
     event_description = st.text_area(
@@ -491,8 +485,6 @@ with right:
         placeholder="Example: AI conference discussing Generative AI and Cloud Computing...",
         height=220
     )
-
-    st.markdown("</div>", unsafe_allow_html=True)
 
 
 # ==============================
