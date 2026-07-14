@@ -1,33 +1,33 @@
 from fastapi import FastAPI
-from app.routers.conversation import router
+
+from app.routers.conversation import router as conversation_router
+from app.routers.feedback import router as feedback_router
+from app.routers.history import router as history_router
+from app.routers.fact_checker import router as fact_router
+
 
 
 app = FastAPI(
     title="Personalized Networking Assistant",
-    description="AI-powered assistant for generating personalized networking conversations and recommendations.",
     version="1.0.0"
 )
 
 
-# Register conversation APIs
-app.include_router(router)
+
+app.include_router(conversation_router)
+
+app.include_router(feedback_router)
+
+app.include_router(history_router)
+
+app.include_router(fact_router)
+
 
 
 @app.get("/")
 def home():
-    """
-    Root endpoint to check API status.
-    """
-    return {
-        "message": "Personalized Networking Assistant API is running"
-    }
 
-
-@app.get("/health")
-def health_check():
-    """
-    Health check endpoint for deployment monitoring.
-    """
     return {
-        "status": "healthy"
+        "message":
+        "Personalized Networking Assistant API Running"
     }

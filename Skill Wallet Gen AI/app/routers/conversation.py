@@ -30,7 +30,7 @@ router = APIRouter()
 
 
 @router.post(
-    /recommend,
+    "/recommend",
     response_model=RecommendationResponse
 )
 def recommend_connections(
@@ -43,23 +43,23 @@ def recommend_connections(
     )
 
     save_history({
-        interests: request.interests,
-        skills: request.skills,
-        profession: request.profession,
-        recommendations: recommendations
+        "interests": request.interests,
+        "skills": request.skills,
+        "profession": request.profession,
+        "recommendations": recommendations
     })
 
     return {
-        recommended_connections: recommendations,
-        reasons: [
-            Similar professional interests,
-            Matching technical skills
+        "recommended_connections": recommendations,
+        "reasons": [
+            "Similar professional interests",
+            "Matching technical skills"
         ]
     }
 
 
 @router.post(
-    /conversation-starters,
+    "/conversation-starters",
     response_model=ConversationResponse
 )
 def conversation_starters(
@@ -71,28 +71,28 @@ def conversation_starters(
     )
 
     return {
-        conversation_starters: suggestions
+        "conversation_starters": suggestions
     }
 
 
-@router.get(/history)
+@router.get("/history")
 def history():
 
     return get_history()
 
 
 @router.post(
-    /feedback,
+    "/feedback",
     response_model=FeedbackResponse
 )
 def submit_feedback(
         request: FeedbackRequest):
 
     save_feedback({
-        feedback: request.feedback,
-        rating: request.rating
+        "feedback": request.feedback,
+        "rating": request.rating
     })
 
     return {
-        message: Feedback submitted successfully.
+        "message": "Feedback submitted successfully."
     }
