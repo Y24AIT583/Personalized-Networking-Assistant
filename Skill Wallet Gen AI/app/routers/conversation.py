@@ -4,9 +4,7 @@ from app.models.schemas import (
     RecommendationRequest,
     RecommendationResponse,
     ConversationRequest,
-    ConversationResponse,
-    FeedbackRequest,
-    FeedbackResponse
+    ConversationResponse
 )
 
 from app.services.recommendation_engine import (
@@ -15,15 +13,6 @@ from app.services.recommendation_engine import (
 
 from app.services.conversation_generator import (
     generate_conversation_starters
-)
-
-from app.services.history_logger import (
-    save_history,
-    get_history
-)
-
-from app.services.feedback_logger import (
-    save_feedback
 )
 
 router = APIRouter()
@@ -41,13 +30,6 @@ def recommend_connections(
         request.skills,
         request.profession
     )
-
-    save_history({
-        "interests": request.interests,
-        "skills": request.skills,
-        "profession": request.profession,
-        "recommendations": recommendations
-    })
 
     return {
         "recommended_connections": recommendations,
@@ -72,27 +54,4 @@ def conversation_starters(
 
     return {
         "conversation_starters": suggestions
-    }
-
-
-@router.get("/history")
-def history():
-
-    return get_history()
-
-
-@router.post(
-    "/feedback",
-    response_model=FeedbackResponse
-)
-def submit_feedback(
-        request: FeedbackRequest):
-
-    save_feedback({
-        "feedback": request.feedback,
-        "rating": request.rating
-    })
-
-    return {
-        "message": "Feedback submitted successfully."
     }
