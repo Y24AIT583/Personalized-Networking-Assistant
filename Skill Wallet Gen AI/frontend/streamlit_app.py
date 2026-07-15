@@ -425,7 +425,8 @@ if st.sidebar.button("View History"):
         if response.status_code == 200:
 
             history = response.json()
-
+            st.sidebar.write("DEBUG:", history)
+            st.sidebar.write("Length:", len(history))
 
             if history:
 
