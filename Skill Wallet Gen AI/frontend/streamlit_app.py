@@ -425,16 +425,25 @@ if st.sidebar.button("View History"):
         if response.status_code == 200:
 
             history = response.json()
-            st.sidebar.write("DEBUG:", history)
-            st.sidebar.write("Length:", len(history))
 
             if history:
 
-                for item in history[-5:]:
+                for index, item in enumerate(reversed(history[-5:]), start=1):
 
-                    st.sidebar.write(
-                        item
-                    )
+                    with st.sidebar.expander(f"📝 Session {index}"):
+
+                        st.write(f"**Profession:** {item['profession']}")
+
+                        st.write(f"**Event:** {item['description']}")
+                
+                        st.write("**Topics:**")
+                
+                        for topic in item["topics"]:
+                            st.write(f"• {topic}")
+                
+                        st.write("**Interests:**")
+                
+                        st.write(", ".join(item["interests"]))
 
             else:
 
