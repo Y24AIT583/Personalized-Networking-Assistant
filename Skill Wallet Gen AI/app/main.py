@@ -12,7 +12,7 @@ app = FastAPI(
     version="1.0.0"
 )
 
-app.include_router(conversation_router)
+#app.include_router(conversation_router)
 app.include_router(feedback_router)
 app.include_router(history_router)
 app.include_router(fact_router)
