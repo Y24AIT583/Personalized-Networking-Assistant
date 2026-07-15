@@ -31,16 +31,20 @@ def generate(request: GenerateRequest):
     )
 
     # Step 3: Save history
-    save_history(
-        {
-            "description": request.description,
-            "profession": request.profession,
-            "skills": request.skills,
-            "interests": request.interests,
-            "topics": detected_topics,
-            "suggestions": suggestions
-        }
-    )
+    try:
+        save_history(
+            {
+                "description": request.description,
+                "profession": request.profession,
+                "skills": request.skills,
+                "interests": request.interests,
+                "topics": detected_topics,
+                "suggestions": suggestions
+            }
+        )
+        print("✅ History saved successfully")
+    except Exception as e:
+        print("❌ Error while saving history:", e)
 
     # Step 4: Return data to Streamlit
     return {
