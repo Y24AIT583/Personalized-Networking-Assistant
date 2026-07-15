@@ -19,34 +19,36 @@ class GenerateRequest(BaseModel):
 @router.post("/generate")
 def generate(request: GenerateRequest):
 
-    # Step 1: Detect topics from the event description
-    detected_topics = analyze_profile(
-        request.description
-    )
+    print("Step 1")
 
-    # Step 2: Generate conversation starters
+    detected_topics = analyze_profile(request.description)
+
+    print("Step 2")
+    print(detected_topics)
+
     suggestions = generate_conversation_topics(
         detected_topics,
         request.interests
     )
 
-    # Step 3: Save history
-    try:
-        save_history(
-            {
-                "description": request.description,
-                "profession": request.profession,
-                "skills": request.skills,
-                "interests": request.interests,
-                "topics": detected_topics,
-                "suggestions": suggestions
-            }
-        )
-        print("✅ History saved successfully")
-    except Exception as e:
-        print("❌ Error while saving history:", e)
+    print("Step 3")
+    print(suggestions)
 
-    # Step 4: Return data to Streamlit
+    print("Step 4 - Before save_history")
+
+    save_history(
+        {
+            "description": request.description,
+            "profession": request.profession,
+            "skills": request.skills,
+            "interests": request.interests,
+            "topics": detected_topics,
+            "suggestions": suggestions
+        }
+    )
+
+    print("Step 5 - After save_history")
+
     return {
         "topics": detected_topics,
         "suggestions": suggestions
