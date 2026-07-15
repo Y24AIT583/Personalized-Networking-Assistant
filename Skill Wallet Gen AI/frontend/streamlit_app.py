@@ -768,9 +768,7 @@ st.caption(
     "Examples: Artificial Intelligence, Machine Learning, Cloud Computing, Python (programming language)"
 )
 
-if st.button(
-    "Verify Topic"
-):
+if st.button("Get Topic Information"):
 
 
     try:
