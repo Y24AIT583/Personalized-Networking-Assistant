@@ -15,4 +15,4 @@ This repository contains the implementation of the **Personalized Networking Ass
 
 ## ▶️ Demo Video
 
-🔗 
+🔗 https://drive.google.com/file/d/1Un4GVnNhXZ_CV6myDIL7vkg8YagWRTMv/view?usp=sharing
