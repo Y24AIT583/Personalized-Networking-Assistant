@@ -756,17 +756,17 @@ if st.session_state.suggestions:
 st.divider()
 
 
-st.header(
-"🔎 Professional Topic Fact Checker"
-)
+st.header("🔎 Professional Topic Information")
 
 
 query = st.text_input(
-    "Enter topic",
+    "Enter a professional topic",
     placeholder="Artificial Intelligence"
 )
 
-
+st.caption(
+    "Examples: Artificial Intelligence, Machine Learning, Cloud Computing, Python (programming language)"
+)
 
 if st.button(
     "Verify Topic"
