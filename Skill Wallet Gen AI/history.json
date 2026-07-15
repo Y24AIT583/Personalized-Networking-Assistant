@@ -1,1 +1,207 @@
-[]
+[
+    {
+        "description": "AI Conference",
+        "profession": "Student",
+        "skills": [
+            "Python",
+            "AI"
+        ],
+        "interests": [
+            "Machine Learning",
+            "Cloud"
+        ],
+        "topics": [
+            "Artificial Intelligence",
+            "Machine Learning"
+        ],
+        "suggestions": [
+            "What inspired you to explore Artificial Intelligence?",
+            "How do you see Artificial Intelligence impacting the industry in the future?",
+            "What are some interesting developments you have noticed in Artificial Intelligence?",
+            "What inspired you to explore Machine Learning?",
+            "How do you see Machine Learning impacting the industry in the future?",
+            "What are some interesting developments you have noticed in Machine Learning?",
+            "I noticed you're interested in Machine Learning. What projects or experiences have you had in this area?",
+            "What skills are you currently building related to Machine Learning?",
+            "I noticed you're interested in Cloud. What projects or experiences have you had in this area?",
+            "What skills are you currently building related to Cloud?"
+        ]
+    },
+    {
+        "description": "AI Conference",
+        "profession": "Student",
+        "skills": [
+            "Python",
+            "AI"
+        ],
+        "interests": [
+            "Machine Learning",
+            "Cloud"
+        ],
+        "topics": [
+            "Artificial Intelligence",
+            "Machine Learning"
+        ],
+        "suggestions": [
+            "What inspired you to explore Artificial Intelligence?",
+            "How do you see Artificial Intelligence impacting the industry in the future?",
+            "What are some interesting developments you have noticed in Artificial Intelligence?",
+            "What inspired you to explore Machine Learning?",
+            "How do you see Machine Learning impacting the industry in the future?",
+            "What are some interesting developments you have noticed in Machine Learning?",
+            "I noticed you're interested in Machine Learning. What projects or experiences have you had in this area?",
+            "What skills are you currently building related to Machine Learning?",
+            "I noticed you're interested in Cloud. What projects or experiences have you had in this area?",
+            "What skills are you currently building related to Cloud?"
+        ]
+    },
+    {
+        "description": "AI Conference",
+        "profession": "Student",
+        "skills": [
+            "Python",
+            "AI"
+        ],
+        "interests": [
+            "Machine Learning",
+            "Cloud"
+        ],
+        "topics": [
+            "Artificial Intelligence",
+            "Machine Learning"
+        ],
+        "suggestions": [
+            "What inspired you to explore Artificial Intelligence?",
+            "How do you see Artificial Intelligence impacting the industry in the future?",
+            "What are some interesting developments you have noticed in Artificial Intelligence?",
+            "What inspired you to explore Machine Learning?",
+            "How do you see Machine Learning impacting the industry in the future?",
+            "What are some interesting developments you have noticed in Machine Learning?",
+            "I noticed you're interested in Machine Learning. What projects or experiences have you had in this area?",
+            "What skills are you currently building related to Machine Learning?",
+            "I noticed you're interested in Cloud. What projects or experiences have you had in this area?",
+            "What skills are you currently building related to Cloud?"
+        ]
+    },
+    {
+        "description": "AI Conference",
+        "profession": "Student",
+        "skills": [
+            "Python",
+            "AI"
+        ],
+        "interests": [
+            "Machine Learning",
+            "Cloud"
+        ],
+        "topics": [
+            "Artificial Intelligence",
+            "Machine Learning"
+        ],
+        "suggestions": [
+            "What inspired you to explore Artificial Intelligence?",
+            "How do you see Artificial Intelligence impacting the industry in the future?",
+            "What are some interesting developments you have noticed in Artificial Intelligence?",
+            "What inspired you to explore Machine Learning?",
+            "How do you see Machine Learning impacting the industry in the future?",
+            "What are some interesting developments you have noticed in Machine Learning?",
+            "I noticed you're interested in Machine Learning. What projects or experiences have you had in this area?",
+            "What skills are you currently building related to Machine Learning?",
+            "I noticed you're interested in Cloud. What projects or experiences have you had in this area?",
+            "What skills are you currently building related to Cloud?"
+        ]
+    },
+    {
+        "description": "Technical Conference",
+        "profession": "Developer",
+        "skills": [
+            "Python",
+            "AI"
+        ],
+        "interests": [
+            "Machine Learning",
+            "Cloud"
+        ],
+        "topics": [
+            "Cybersecurity"
+        ],
+        "suggestions": [
+            "What inspired you to explore Cybersecurity?",
+            "How do you see Cybersecurity impacting the industry in the future?",
+            "What are some interesting developments you have noticed in Cybersecurity?",
+            "I noticed you're interested in Machine Learning. What projects or experiences have you had in this area?",
+            "What skills are you currently building related to Machine Learning?",
+            "I noticed you're interested in Cloud. What projects or experiences have you had in this area?",
+            "What skills are you currently building related to Cloud?"
+        ]
+    },
+    {
+        "description": "Technical Conference",
+        "profession": "Researcher",
+        "skills": [
+            "Python",
+            "AI"
+        ],
+        "interests": [
+            "Cloud Developer"
+        ],
+        "topics": [
+            "Cybersecurity"
+        ],
+        "suggestions": [
+            "What inspired you to explore Cybersecurity?",
+            "How do you see Cybersecurity impacting the industry in the future?",
+            "What are some interesting developments you have noticed in Cybersecurity?",
+            "I noticed you're interested in Cloud Developer. What projects or experiences have you had in this area?",
+            "What skills are you currently building related to Cloud Developer?"
+        ]
+    },
+    {
+        "description": "Awareness in bussiness",
+        "profession": "Entrepreneur",
+        "skills": [
+            "Marketing Skills"
+        ],
+        "interests": [
+            "Collaborations"
+        ],
+        "topics": [
+            "Blockchain"
+        ],
+        "suggestions": [
+            "What inspired you to explore Blockchain?",
+            "How do you see Blockchain impacting the industry in the future?",
+            "What are some interesting developments you have noticed in Blockchain?",
+            "I noticed you're interested in Collaborations. What projects or experiences have you had in this area?",
+            "What skills are you currently building related to Collaborations?"
+        ]
+    },
+    {
+        "description": "AI Conference",
+        "profession": "Student",
+        "skills": [
+            "Python",
+            "AI"
+        ],
+        "interests": [
+            "Machine Learning",
+            "Cloud"
+        ],
+        "topics": [
+            "Artificial Intelligence",
+            "Machine Learning"
+        ],
+        "suggestions": [
+            "What inspired you to explore Artificial Intelligence?",
+            "How do you see Artificial Intelligence impacting the industry in the future?",
+            "What are some interesting developments you have noticed in Artificial Intelligence?",
+            "What inspired you to explore Machine Learning?",
+            "How do you see Machine Learning impacting the industry in the future?",
+            "What are some interesting developments you have noticed in Machine Learning?",
+            "I noticed you're interested in Machine Learning. What projects or experiences have you had in this area?",
+            "What skills are you currently building related to Machine Learning?",
+            "I noticed you're interested in Cloud. What projects or experiences have you had in this area?",
+            "What skills are you currently building related to Cloud?"
+        ]
+    }
+]

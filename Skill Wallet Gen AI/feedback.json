@@ -2,5 +2,13 @@
     {
         "suggestion": "What projects have you worked on related to Python?",
         "rating": "like"
+    },
+    {
+        "suggestion": "How do you see Blockchain impacting the industry in the future?",
+        "rating": "like"
+    },
+    {
+        "suggestion": "What inspired you to explore Artificial Intelligence?",
+        "rating": "like"
     }
 ]
