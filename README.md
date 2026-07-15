@@ -57,18 +57,90 @@ The Personalized Networking Assistant solves this problem using **Generative AI*
 ## 📂 Project Structure
 
 ```
-Personalized-Networking-Assistant
+Personalized-Networking-Assistant/
 │
-├── 1. Brainstorming & Ideation
-├── 2. Requirements Analysis
-├── 3. Solution Architecture
-├── 4. Project Planning Phase
-├── 5. Project Development Phase
-├── 6. Testing
-├── 7. Deployment
-├── 8. Project Documentation
-├── Images
-└── Source Code
+├── Demo Video/
+│   └── README.md
+│
+├── Documentation/
+│   │
+│   ├── 1. Brainstorming & Ideation/
+│   │   ├── Brainstorming & Idea Prioritization.pdf
+│   │   ├── Define Problem Statements.pdf
+│   │   ├── Empathy Map.pdf
+│   │   └── README.md
+│   │
+│   ├── 2. Requirements Analysis/
+│   │   ├── Customer Journey Map.pdf
+│   │   ├── Data Flow Diagram.pdf
+│   │   ├── Solution Requirements.pdf
+│   │   ├── Technology Stack.pdf
+│   │   └── README.md
+│   │
+│   ├── 3. Solution Architecture/
+│   │   ├── Problem-Solution Fit.pdf
+│   │   ├── Proposed Solution.pdf
+│   │   ├── Solution Architecture.pdf
+│   │   └── README.md
+│   │
+│   ├── 4. Project Planning Phase/
+│   │   ├── Project Planning.pdf
+│   │   └── README.md
+│   │
+│   ├── 5. Project Development Phase/
+│   │   ├── Code-Layout.pdf
+│   │   ├── Coding & Solution.pdf
+│   │   ├── No. of Functional Features List.pdf
+│   │   └── README.md
+│   │
+│   ├── 6. Testing/
+│   │   ├── Performance Testing.pdf
+│   │   └── README.md
+│   │
+│   ├── 7. Deployment/
+│   │   ├── Project Executable Files.pdf
+│   │   ├── Sample Project Documentation.pdf
+│   │   └── README.md
+│   │
+│   └── 8. Project Documentation/
+│       ├── Communication.pdf
+│       ├── Demonstration of Proposed Solution.pdf
+│       ├── Project Demo Planning.pdf
+│       ├── Scalability & Future Plan.pdf
+│       ├── Team Involvement in Demo.pdf
+│       └── README.md
+│
+└── Skill Wallet Gen AI/
+    │
+    ├── ER Diagram/
+    │   ├── ER Diagram Description.txt
+    │   └── ER Diagram.png
+    │
+    ├── app/
+    │   │
+    │   ├── main.py
+    │   │
+    │   ├── models/
+    │   │   ├── __init__.py
+    │   │   └── schemas.py
+    │   │
+    │   ├── routers/
+    │   │   ├── __init__.py
+    │   │   ├── conversation.py
+    │   │   ├── fact_checker.py
+    │   │   ├── feedback.py
+    │   │   ├── generate.py
+    │   │   └── history.py
+    │   │
+    │   └── services/
+    │
+    ├── frontend/
+    │   └── streamlit_app.py
+    │
+    ├── feedback.json
+    ├── history.json
+    ├── requirements.txt
+    └── README.md
 ```
 
 ---
