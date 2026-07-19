@@ -8,5 +8,3 @@ reportlab
 wikipedia-api
 pydantic
 email-validator
-transformers
-torch
