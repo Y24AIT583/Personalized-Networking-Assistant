@@ -15,7 +15,7 @@ from reportlab.lib.styles import getSampleStyleSheet
 # Backend API URL
 # ==============================
 
-API_URL = "http://127.0.0.1:8000"
+API_URL = "https://personalized-networking-assistant-2t4z.onrender.com"
 
 
 # ==============================
