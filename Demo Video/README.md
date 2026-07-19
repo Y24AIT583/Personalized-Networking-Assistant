@@ -16,3 +16,7 @@ This repository contains the implementation of the **Personalized Networking Ass
 ## ▶️ Demo Video
 
 🔗 https://drive.google.com/file/d/1Un4GVnNhXZ_CV6myDIL7vkg8YagWRTMv/view?usp=sharing
+
+## ▶️ Published live Working Video
+
+🔗 https://drive.google.com/file/d/1rRYrALx3PkQxzvl2il2J9DtPP3X91f__/view?usp=sharing
