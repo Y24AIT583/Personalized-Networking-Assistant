@@ -325,70 +325,23 @@ unsafe_allow_html=True
 
 
 
-hero_left, hero_right = st.columns([2.3, 1])
+st.markdown("""
+<div class="hero-container">
 
-with hero_left:
-    st.markdown("""
-    <div class="hero-container">
-        <div class="hero-title">
-            🤝 Personalized Networking Assistant
-        </div>
+<div class="hero-title">
+🤝 Personalized Networking Assistant
+</div>
 
-        <div class="hero-subtitle">
-            Build meaningful professional connections using
-            <b>Google Gemini AI</b>.
-        </div>
+<div class="hero-subtitle">
+Build meaningful professional connections with AI-powered recommendations, conversation starters, and networking insights.
+</div>
 
-        <br>
+<div class="hero-badge">
+🚀 Powered by Google Gemini AI
+</div>
 
-        <div style="font-size:17px; line-height:2;">
-            ✅ AI-powered networking recommendations<br>
-            ✅ Personalized conversation starters<br>
-            ✅ Professional topic verification<br>
-            ✅ Networking history & PDF reports
-        </div>
-
-        <br>
-
-        <div class="hero-badge">
-            🚀 Powered by Google Gemini AI
-        </div>
-    </div>
-    """, unsafe_allow_html=True)
-
-with hero_right:
-    st.markdown(
-        """
-        <div style="
-            background:white;
-            border-radius:20px;
-            padding:30px;
-            text-align:center;
-            margin-top:20px;
-            box-shadow:0 10px 30px rgba(37,99,235,.15);
-            border:1px solid #e5e7eb;
-        ">
-            <div style="font-size:70px;">🤖</div>
-
-            <h3 style="margin-bottom:8px;color:#2563eb;">
-                AI Assistant
-            </h3>
-
-            <p style="color:#6b7280;font-size:15px;">
-                Smart networking powered by Generative AI
-            </p>
-
-            <hr>
-
-            <p style="font-size:14px;color:#374151;">
-                FastAPI<br>
-                Streamlit<br>
-                Gemini AI
-            </p>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
+</div>
+""", unsafe_allow_html=True)
 
 st.markdown("## 📊 Dashboard")
 
