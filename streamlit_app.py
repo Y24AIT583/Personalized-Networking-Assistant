@@ -357,35 +357,38 @@ with hero_left:
     """, unsafe_allow_html=True)
 
 with hero_right:
-    st.markdown("""
-    <div style="
-        background:white;
-        border-radius:20px;
-        padding:30px;
-        text-align:center;
-        margin-top:20px;
-        box-shadow:0 10px 30px rgba(37,99,235,.15);
-        border:1px solid #e5e7eb;
-    ">
-        <div style="font-size:70px;">🤖</div>
+    st.markdown(
+        """
+        <div style="
+            background:white;
+            border-radius:20px;
+            padding:30px;
+            text-align:center;
+            margin-top:20px;
+            box-shadow:0 10px 30px rgba(37,99,235,.15);
+            border:1px solid #e5e7eb;
+        ">
+            <div style="font-size:70px;">🤖</div>
 
-        <h3 style="margin-bottom:8px;color:#2563eb;">
-            AI Assistant
-        </h3>
+            <h3 style="margin-bottom:8px;color:#2563eb;">
+                AI Assistant
+            </h3>
 
-        <p style="color:#6b7280;font-size:15px;">
-            Smart networking powered by Generative AI
-        </p>
+            <p style="color:#6b7280;font-size:15px;">
+                Smart networking powered by Generative AI
+            </p>
 
-        <hr>
+            <hr>
 
-        <p style="font-size:14px;color:#374151;">
-            FastAPI<br>
-            Streamlit<br>
-            Gemini AI
-        </p>
-    </div>
-    """, unsafe_allow_html=True)
+            <p style="font-size:14px;color:#374151;">
+                FastAPI<br>
+                Streamlit<br>
+                Gemini AI
+            </p>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
 
 st.markdown("## 📊 Dashboard")
 
